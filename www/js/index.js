@@ -1,8 +1,8 @@
 var paused_count =0;
 var resumed_count = 0;
 var launched_count = 0;
-        var key = "pen", "colour", "food", "drink";
-        var value = "blue" , "red", "burger", "coke";
+        var key = "pen";
+        var value = "blue", "pink", "red";
         
         window.localStorage.setItem(key, value);
 
@@ -23,8 +23,8 @@ var launched_count = 0;
     function onDeviceReady() {
 		alert("device ready");
         
-        var key = "pen";
-        var value = alert(window.localStorage.getItem(key));
+        
+        var key = alert(window.localStorage.getItem(key));
         
         
 		document.addEventListener("resume", onResume, false);
