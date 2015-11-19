@@ -27,7 +27,7 @@ var launched_count = 0;
     function onDeviceReady() {
 		alert("device ready");
 
-	window.localStorage.getItem("pen");
+	var key = alert(window.localStorage.getItem("pen"));
 		document.addEventListener("resume", onResume, false);
 		document.addEventListener("pause", onPause, false);
 		
