@@ -1,10 +1,13 @@
 var paused_count =0;
 var resumed_count = 0;
 var launched_count = 0;
-        var key = "pen";
-        var value[] = new Array("blue", "red", "green");
+
         
-        window.localStorage.setItem(key, value[]);
+        window.localStorage.setItem("pen", "red");
+	window.localStorage.setItem("food", "burger");
+	window.localStorage.setItem("drink", "coke");
+
+  
 
     function onLoad() {
         document.addEventListener("deviceready", onDeviceReady, false);
@@ -23,8 +26,8 @@ var launched_count = 0;
     function onDeviceReady() {
 		alert("device ready");
         
-        
-        alert(window.localStorage.getItem(key));
+        var value = "red";
+        var key = alert(window.localStorage.getItem(key));
         
         
 		document.addEventListener("resume", onResume, false);
