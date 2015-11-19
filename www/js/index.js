@@ -7,12 +7,12 @@ var launched_count = 0;
 		console.log("device ready");
     }
 	
-	function updateDisplay() {
+/*	function updateDisplay() {
 		$("#launched").text("Application launched: " + launched_count);
 		$("#resumed").text("Application paused: " + paused_count);
 		$("#paused").text("Application resumed: " + resumed_count);
 	}
-
+*/
 
     // device APIs are available
     //
@@ -32,12 +32,12 @@ var launched_count = 0;
         
         
         
-        
+        /*
 		document.addEventListener("resume", onResume, false);
 		document.addEventListener("pause", onPause, false);
 		
 		launched_count++;
-		updateDisplay();
+		updateDisplay(); */
     }
 
     // Handle the pause event
