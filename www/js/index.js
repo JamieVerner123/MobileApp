@@ -19,6 +19,20 @@ var launched_count = 0;
     function onDeviceReady() {
 		alert("device ready");
         
+        var key = "pen", "colour", "food", "drink";
+        var value = "blue" , "red", "burger", "coke";
+        
+        window.localStorage.setItem(key, value);
+        
+        window.localStorage.getItem(key);
+        
+        
+        
+        
+        
+        
+        
+        
 		document.addEventListener("resume", onResume, false);
 		document.addEventListener("pause", onPause, false);
 		
