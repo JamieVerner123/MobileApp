@@ -27,7 +27,7 @@ var launched_count = 0;
 		alert("device ready");
         
         var value = "red";
-        var key = alert(window.localStorage.getItem(key));
+        var key = alert(window.localStorage.getItem("pen"));
         
         
 		document.addEventListener("resume", onResume, false);
