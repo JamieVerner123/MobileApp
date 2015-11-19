@@ -2,7 +2,7 @@ var paused_count =0;
 var resumed_count = 0;
 var launched_count = 0;
         var key = "pen";
-        var value[] = "blue", "red", "green";
+        var value[] = new Array("blue", "red", "green");
         
         window.localStorage.setItem(key, value[]);
 
