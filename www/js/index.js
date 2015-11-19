@@ -24,7 +24,7 @@ var launched_count = 0;
 		alert("device ready");
         
         
-        alert(window.localStorage.getItem(key));
+        //alert(window.localStorage.getItem(key));
         
         
 		document.addEventListener("resume", onResume, false);
