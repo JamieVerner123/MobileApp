@@ -24,7 +24,7 @@ var launched_count = 0;
         
         window.localStorage.setItem(key, value);
         
-        window.localStorage.getItem(key);
+        alert(window.localStorage.getItem(key));
         
         
         
