@@ -2,9 +2,9 @@ var paused_count =0;
 var resumed_count = 0;
 var launched_count = 0;
         var key = "pen";
-        var value = "blue";
+        var value[] = "blue", "red", "green";
         
-        window.localStorage.setItem(key, value);
+        window.localStorage.setItem(key, value[]);
 
     function onLoad() {
         document.addEventListener("deviceready", onDeviceReady, false);
