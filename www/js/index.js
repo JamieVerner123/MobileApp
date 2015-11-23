@@ -12,10 +12,10 @@ var launched_count = 0;
         document.addEventListener("deviceready", onDeviceReady, false);
 		console.log("device ready");
 		
-		navigator.geolocation.getCurrentPosition(
+	alert(	navigator.geolocation.getCurrentPosition(
 			geolocationSuccess,
 			geolocationError,
-			geolocationOptions);
+			geolocationOptions));
     }
 	
 	function updateDisplay() {
