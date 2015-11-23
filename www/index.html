@@ -11,14 +11,20 @@
 </head>
 
 <body onload="onLoad()">
-  <Script>
-  				
-    navigator.geolocation.getCurrentPosition(
-			geolocationSuccess,
-			geolocationError,
-			geolocationOptions);
-  
-  </Script>
+<script>
+var x = document.getElementById("demo");
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+function showPosition(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude; 
+}
+</script>
   	<h1>Event counts</h1>
 	<div id="launched"></div>
 	<div id="paused"></div>
