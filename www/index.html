@@ -11,6 +11,11 @@
 </head>
 
 <body onload="onLoad()">
+
+  	<h1>Event counts</h1>
+	<div id="launched"></div>
+	<div id="paused"></div>
+	<div id="resumed"></div>
 <script>
 var x = document.getElementById("demo");
 function getLocation() {
@@ -25,10 +30,5 @@ function showPosition(position) {
     "<br>Longitude: " + position.coords.longitude; 
 }
 </script>
-  	<h1>Event counts</h1>
-	<div id="launched"></div>
-	<div id="paused"></div>
-	<div id="resumed"></div>
-
 </body>
 </html>
