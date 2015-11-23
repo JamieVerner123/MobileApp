@@ -12,7 +12,7 @@
     <description>
         A sample application that counts the occurances of lifecycle events.
     </description>
-
+ 
     <author href="worcester.ac.uk" email="c.bowers@worc.ac.uk">
         WBS Computing
     </author>
