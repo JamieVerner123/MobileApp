@@ -5,7 +5,6 @@
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.phonegap.helloworld"
         version   = "1.0.0">
-<plugin name = "org.apache.cordova.geolocation" spec ="0.3.10" source"pgb"/>
 
     <name>Storage</name>
 
