@@ -5,7 +5,10 @@ var launched_count = 0;
         window.localStorage.setItem("pen", "red");
 	window.localStorage.setItem("food", "burger");
 	window.localStorage.setItem("drink", "coke");
-	
+var location = navigator.geolocation.getCurrentPosition(
+geolocationSuccess,
+geolocationError,
+geolocationOptions);	
 
 
     function onLoad() {
@@ -34,7 +37,7 @@ var launched_count = 0;
 	var key = alert(window.localStorage.getItem("pen"));
 		document.addEventListener("resume", onResume, false);
 		document.addEventListener("pause", onPause, false);
-		
+		alert(location);
 		launched_count++;
 		updateDisplay(); 
     }
