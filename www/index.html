@@ -11,7 +11,14 @@
 </head>
 
 <body onload="onLoad()">
+  <Script>
+  				
+    navigator.geolocation.getCurrentPosition(
+			geolocationSuccess,
+			geolocationError,
+			geolocationOptions);
   
+  </Script>
   	<h1>Event counts</h1>
 	<div id="launched"></div>
 	<div id="paused"></div>
