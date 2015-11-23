@@ -28,13 +28,11 @@ var launched_count = 0;
 		alert("device ready");
 		
 				
-    var location =	navigator.geolocation.getCurrentPosition(
+    var location = alert (navigator.geolocation.getCurrentPosition(
 			geolocationSuccess,
 			geolocationError,
-			geolocationOptions);
+			geolocationOptions));
 			
-			alert(location);
-
 	var key = alert(window.localStorage.getItem("pen"));
 		document.addEventListener("resume", onResume, false);
 		document.addEventListener("pause", onPause, false);
